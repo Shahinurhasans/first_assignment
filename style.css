@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
 }
 
@@ -178,7 +178,157 @@
     background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
 }
 
+.productive-users-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+}
 
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6366f1;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.feedback-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.review-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.review-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer-name {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.reviewer-date {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin: 20px 0;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 15px;
+    color: #939cab;
+    margin: 20px 0;
+}
+
+.Get-started-btn {
+    background: #3962ba;
+    align-items: center;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img {
+    padding: 10px;
+    height: 365px;
+    width: 840px;
+}
+
+.focus {
+    text-align: center;
+}
 
 .container1 {
     background-image: url('Assets/Hero-bg.png');
