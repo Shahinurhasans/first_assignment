@@ -1,28 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f8f9fa;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container1 {
-    background-image: url('Assets/Hero-bg.png');
-    background-color: #1e293b;
-    /* Fallback color */
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 30px;
 }
 
 .navbar {
@@ -41,58 +20,75 @@ body {
 }
 
 .logo {
-    font-size: 2.5rem;
+
+    font-size: 3rem;
     font-weight: bold;
     color: #6366f1;
+    margin-bottom: 20px;
+
 }
 
-.signup-btn,
-.stay-focused-btn,
-.launch-preview-btn,
-.get-started-btn,
-.submit-btn {
+.signup-btn {
     background: #6366f1;
     color: white;
     border: none;
-    padding: 14px 28px;
+    padding: 12px 24px;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+
+
 .signup-btn:hover,
-.stay-focused-btn:hover,
-.launch-preview-btn:hover,
 .get-started-btn:hover,
-.submit-btn:hover {
+.launch-preview-btn:hover,
+.Get-started-btn:hover,
+.submit-btn:hover,
+.stay-focused-btn:hover {
     background: #e8503ce9;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
 }
 
 .hero-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    z-index: 2;
     padding: 40px 20px;
+    margin-bottom: 30px;
 }
 
 .hero-title {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #1e293b;
+    color: rgb(8, 8, 8);
+    margin-bottom: 40px;
     max-width: 800px;
     line-height: 1.2;
-    margin-bottom: 40px;
+
 }
 
-.action-section {
-    padding: 40px 0;
+.stay-focused-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
 }
+
 
 .action-content {
     display: grid;
@@ -113,7 +109,7 @@ body {
 
 .action-text p {
     font-size: 1.1rem;
-    color: #1e293b;
+    color: #64748b;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -124,6 +120,24 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+.launch-preview-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-section {
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
 
 .productive-users-section {
     padding: 40px 0;
@@ -138,15 +152,17 @@ body {
     font-size: 2.2rem;
     font-weight: bold;
     color: #1e293b;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .stats-container {
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
     text-align: center;
 }
+
 
 .stat-item:hover {
     transform: translateY(-5px);
@@ -161,12 +177,12 @@ body {
 
 .stat-label {
     font-size: 1.1rem;
-    color: #1e293b;
+    color: #64748b;
     font-weight: 500;
 }
 
 .feedback-section {
-    padding: 80px 0;
+    padding: 100px 0;
     background: white;
 }
 
@@ -174,6 +190,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-top: 60px;
 }
 
 .review-card {
@@ -207,7 +224,7 @@ body {
 }
 
 .review-card p {
-    color: #1e293b;
+    color: #64748b;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -231,70 +248,152 @@ body {
 
 .reviewer-date {
     font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5rem;
     color: #1e293b;
+    margin: 20px 0;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 15px;
+    color: #939cab;
+    margin: 20px 0;
+}
+
+.Get-started-btn {
+    background: #3962ba;
+    align-items: center;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+.img {
+
+    margin: 10px;
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .focus {
     text-align: center;
-    padding: 40px 0;
 }
 
-.text {
-    font-size: 1.5rem;
-    color: #1e293b;
+
+
+.footer-section {
+    padding: 80px 0;
+    background: white;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6366f1;
     margin-bottom: 20px;
 }
 
-.text2 {
-    font-size: 1rem;
-    color: #1e293b;
-    margin-bottom: 20px;
+.footer-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
 }
 
-.img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    display: block;
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.contact-section {
-    padding: 40px 0;
+.footer-link {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #6366f1;
+}
+
+
+.container1 {
+    background-image: url('assets/Hero-bg.png');
+    margin-bottom: 30px;
+}
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-form-wrapper {
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 400px;
 }
 
 .heading-section {
+
     padding: 60px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: relative;
 }
 
 .heading-section h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1e293b;
+    color: #1a1a1a;
     text-align: center;
+    line-height: 1.2;
 }
 
 .form-section {
     padding: 40px;
+
 }
 
 .contact-form {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,7 +407,7 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #1e293b;
+    color: #333;
     font-size: 0.9rem;
 }
 
@@ -320,6 +419,7 @@ body {
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .form-group input:focus,
@@ -339,42 +439,44 @@ body {
     min-height: 100px;
 }
 
-.footer-section {
-    padding: 80px 0;
-    background: white;
-    text-align: center;
+.submit-btn {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 8px;
+    width: 100%;
 }
 
-.footer-logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #6366f1;
-    margin-bottom: 20px;
+
+.submit-btn:active {
+    transform: translateY(0);
 }
 
-.footer-subtitle {
-    font-size: 1.1rem;
-    color: #1e293b;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    line-height: 1.6;
-}
-
-.footer-nav {
+.contact-section {
+    width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.footer-link {
-    color: #1e293b;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
 }
 
-.footer-link:hover {
-    color: #6366f1;
+.contact-form-wrapper {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
