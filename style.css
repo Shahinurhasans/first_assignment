@@ -127,6 +127,59 @@
     background: #f8fafc;
 }
 
+.productive-users-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 60px;
+}
+
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6366f1;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.productive-users-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+}
+
+
+
 .container1 {
     background-image: url('Assets/Hero-bg.png');
 }
